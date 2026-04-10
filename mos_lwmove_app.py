@@ -557,7 +557,7 @@ if page == "🏠  Dashboard":
                           xaxis=dict(rangeslider=dict(visible=True),type="date",gridcolor="#21262d",tickfont=dict(size=10)),
                           yaxis=dict(gridcolor="#21262d",autorange="reversed",tickfont=dict(size=10)),
                           legend=dict(orientation="h",y=-0.2),title_font=dict(size=13,color="#58a6ff"))
-        fig.add_vline(x=date.today().isoformat(),line_dash="dot",line_color="#f59e0b",
+        fig.add_vline(x=date.today(), line_dash="dot",line_color="#f59e0b",
                       annotation_text="Today",annotation_font_color="#f59e0b",annotation_font_size=10)
         st.plotly_chart(fig, use_container_width=True)
         st.caption("Dates from OCN LW Move Plan BIBLE 708-601 v0.1, Table 3-1")
